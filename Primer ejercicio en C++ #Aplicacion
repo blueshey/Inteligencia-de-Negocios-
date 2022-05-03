@@ -10,11 +10,11 @@ int cedula, edad, plato_entrada, plato_fuerte, postre, orden, cuenta, opcion, Vi
 string respuesta = "";
 
 
-//Mensaje de bienvenida 
+//Mensaje de bienvenida//
 cout << "Saludos!! Bienvenidos a la aplicacion que permite registrar" <<endl;
 
 //Constantes 
-plato_entrada = 500;
+plato_entrada = 550
 plato_fuerte = 2000;
 postre = 1500 ;
 Vino = 1400;
