@@ -1,0 +1,93 @@
+#include <iostream>
+using namespace std;
+#include <stdio.h>
+
+int main () {
+
+//Declaracion de variables 
+char nombre_cliente [20];
+int cedula, edad, plato_entrada, plato_fuerte, postre, orden, cuenta, opcion, Vino, Jugo, Agua, Cerveza, Sidra, Ron;
+string respuesta = "";
+
+
+//Mensaje de bienvenida 
+cout << "Saludos!! Bienvenidos a la aplicacion que permite registrar" <<endl;
+
+//Constantes 
+plato_entrada = 500;
+plato_fuerte = 2000;
+postre = 1500 ;
+Vino = 1400;
+Jugo = 300;
+Agua = 100;
+Cerveza = 400;
+Sidra = 1000 ;
+Ron = 2500 ;
+
+cout<<"Nombre del Cliente: " <<endl;
+cin>>nombre_cliente;
+
+cout<<"Edad del cliente: "<<endl;
+cin>>edad;
+
+cout<<"Cedula del cliente: "<<endl;
+cin>>cedula;
+
+cout<<"Responda si, si desea ver el menu? "<<endl;
+cin >> respuesta ;
+
+if (respuesta == "Si" || "si" || "SI" || "sI") {
+cout << "             Menu                      "<<endl;
+cout << "        1.Plato de Entrada    $500     "<<endl;
+cout << "        2.Plato Fuerte        $2000    "<<endl;
+cout << "        3.Postre              $1500    "<<endl;
+cout << "        4.Bebidas                      "<<endl;
+
+cout << "Elija una opcion: "<<endl;
+cin>> opcion;
+
+
+/*for(int i=1;i<4;i++)*/
+
+switch (opcion) {
+
+     case 1: 
+     cout <<"Ha seleccionado plato de Entradas. Cuantas ordenes desea? "<<endl;
+     cin >> orden;
+     cuenta = orden * plato_entrada;
+     cout << "Subtotal: $"<<cuenta<<endl;
+     break;
+
+     case 2: 
+     cout <<"Ha seleccionado Plato fuerte. Cuantas ordenes desea? "<<endl;
+     cin >> orden;
+     cuenta = orden * plato_fuerte;
+     cout << "Subtotal: $"<<cuenta<<endl;
+     break;
+
+     case 3: 
+     cout <<"Ha seleccionado postre. Cuantas ordenes desea? "<<endl;
+     cin >> orden;
+     cuenta = orden * postre;
+     cout << "Subtotal: $"<<cuenta<<endl;
+     break;
+}
+/*else:
+cout <<"Desea ver el menu de las bebidas?"
+
+if (respuesta == 'Si') {
+cout << "          Menu de bebidas           "<<endl;
+cout << "        1.Vino                      "<<endl;
+cout << "        2.Jugo                      "<<endl;
+cout << "        3.Agua                      "<<endl;
+cout << "        4.Cerveza                   "<<endl;
+cout << "        5.Sidra                     "<<endl;
+cout << "        6.Ron                       "<<endl;
+
+
+cout << "Elija una opcion: "<<endl;
+cin>> opcion;
+}*/
+
+}
+}
